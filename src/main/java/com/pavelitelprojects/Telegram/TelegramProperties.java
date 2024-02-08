@@ -1,4 +1,4 @@
-package Telegram;
+package com.pavelitelprojects.Telegram;
 
 import lombok.AccessLevel;
 import lombok.Getter;

@@ -1,6 +1,6 @@
-package com.pavelitelprojects.demo.controller;
+package com.pavelitelprojects.Telegram.demo;
 
-import Telegram.Bot;
+import com.pavelitelprojects.Telegram.Bot;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import org.springframework.beans.factory.annotation.Autowired;
