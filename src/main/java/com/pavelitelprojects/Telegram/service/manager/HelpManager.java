@@ -26,7 +26,7 @@ public class HelpManager {
     public BotApiMethod<?> answerCallbackQuery(CallbackQuery  callbackQuery) {
         return EditMessageText.builder()
                 .chatId(callbackQuery.getMessage().getChatId())
-                .messageId(callbackQuery.getMessage().getChatId())
+                .messageId(callbackQuery.getMessage().getMessageId())
                 .build();
 
 

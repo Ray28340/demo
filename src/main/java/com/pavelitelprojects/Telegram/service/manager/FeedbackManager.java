@@ -27,7 +27,7 @@ public class FeedbackManager {
                         """)
                 .disableWebPagePreview(true)
                 .chatId(callbackQuery.getMessage().getChatId())
-                .messageId(callbackQuery.getMessage().getChatId() )
+                .messageId(callbackQuery.getMessage().getMessageId() )
                 .build();
     }
 }
