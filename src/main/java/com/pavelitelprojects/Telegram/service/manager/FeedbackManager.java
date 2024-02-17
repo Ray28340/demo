@@ -11,23 +11,19 @@ import org.telegram.telegrambots.meta.api.objects.Message;
 public class FeedbackManager {
     public BotApiMethod<?> answerCommand(Message message) {
         return SendMessage.builder()
-                .text("""
-                        Ccылка для обратной свзязи:
-                        https://vk.com/id475514120
-                        """)
-                .disableWebPagePreview(true)
                 .chatId(message.getChatId())
+                .text("""
+                        л
+                        """)
                 .build();
     }
     public BotApiMethod<?> answerCallbackQuery(CallbackQuery callbackQuery) {
         return EditMessageText.builder()
-                .text("""
-                        Ccылка для обратной свзязи:
-                        https://vk.com/id475514120
-                        """)
-                .disableWebPagePreview(true)
                 .chatId(callbackQuery.getMessage().getChatId())
-                .messageId(callbackQuery.getMessage().getMessageId() )
+                .messageId(callbackQuery.getMessage().getMessageId())
+                .text("""
+                        л
+                        """)
                 .build();
     }
 }

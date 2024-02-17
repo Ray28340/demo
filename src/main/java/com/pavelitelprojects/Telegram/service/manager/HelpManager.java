@@ -6,34 +6,25 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.updatingmessages.EditMessageText;
 import org.telegram.telegrambots.meta.api.objects.CallbackQuery;
 import org.telegram.telegrambots.meta.api.objects.Message;
-
+import org.telegram.telegrambots.meta.api.objects.MaybeInaccessibleMessage;
 @Component
 public class HelpManager {
     public BotApiMethod<?> answerCommand(Message message) {
         return SendMessage.builder()
-                .text(
-                        """
-                                Доступные комманды
-                                -help
-                                -start
-                                -feedback        
-                                        """
-                )
                 .chatId(message.getChatId())
+                .text("""
+                        л
+                        """)
                 .build();
     }
-
-    public BotApiMethod<?> answerCallbackQuery(CallbackQuery  callbackQuery) {
+    public BotApiMethod<?> answerCallbackQuery(CallbackQuery callbackQuery) {
         return EditMessageText.builder()
                 .chatId(callbackQuery.getMessage().getChatId())
                 .messageId(callbackQuery.getMessage().getMessageId())
+                .text("""
+                        л
+                        """)
                 .build();
-
-
-                                                
-
-
-
-
-
+    }
 }
+

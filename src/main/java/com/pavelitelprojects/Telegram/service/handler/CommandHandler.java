@@ -57,10 +57,10 @@ public class CommandHandler {
 
     private BotApiMethod<?> defaultAnswer(Message message) {
         return SendMessage.builder()
+                .chatId(message.getChatId())
                 .text("""
                         л
                         """)
-                .chatId(message.getChatId())
                 .build();
     }
 
